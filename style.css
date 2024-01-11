@@ -20,6 +20,13 @@ height: 100%;
     align-items: center;
     overflow: hidden;
     background-image: url(./bg-img.jpg);
+    object-fit: cover;
+}
+option{
+    color :#000 ;  
+}
+select{
+    color :#000 ;  
 }
 .header{
     margin-bottom: 20px;
@@ -52,7 +59,9 @@ height: 100%;
     height: 30px;
     padding: 10px;
     font-size: 18px;
+    text-align: center;
 }
+
 .label{
     font-size: 16px;
     font-weight: 600;
@@ -76,7 +85,15 @@ height: 100%;
     align-items: center;
     justify-content: space-evenly;
 }
-@media (max-width:500px) {
+@media (max-width:450px){
+    #grade-heading{
+        display: none;
+    }
+    .grade-input{
+        display: none;
+    }
+}
+@media (max-width:550px) {
     .form-input{
         width: 100px;
         height: 30px;
