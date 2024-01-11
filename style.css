@@ -79,6 +79,9 @@ select{
     color:#fff;
     transform: none;
 }
+    #submit:hover{
+        cursor :  pointer  ;  
+    }
 #result_container{
     display: flex;
     justify-content: center;
