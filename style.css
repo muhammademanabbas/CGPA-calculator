@@ -50,9 +50,19 @@ select{
     background-color: transparent;
     border: 1px solid #fff;
 }
+.grade-input{
+    width: 50px;
+    height: 30px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
 .container1 h3{
     display: inline-block;
     margin-left: 90px;
+}
+.container1 h3:last-child{
+    margin-left: 50px;
 }
 .form-input{
     width: 200px;
@@ -68,7 +78,6 @@ select{
 }
 #submit-form{
     padding : 10px ;
-
 }
 .container-last{
     display: flex;
@@ -77,42 +86,51 @@ select{
 }
 .container-last input{
     color:#fff;
-    transform: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
-    #submit:hover{
-        cursor :  pointer  ;  
-    }
 #result_container{
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
 }
-@media (max-width:450px){
-    #grade-heading{
-        display: none;
+
+@media (max-width:585px) {
+    .form-input{
+        width: 160px;
+        height: 30px;
     }
-    .grade-input{
-        display: none;
+    #second-h3{
+        margin-left: 40px;
+    }
+    .container1 h3:last-child{
+        margin-left: 16px;
     }
 }
 @media (max-width:550px) {
     .form-input{
-        width: 100px;
+        width: 80px;
         height: 30px;
+    }
+    .container1 h3:last-child{
+        margin-left: 0px;
     }
     .container1 h3{
         font-size: 12px;
         margin-left: 5px;
     }
     #second-h3{
-        margin-left: 10px;
+        margin-left: 8px;
     }
     .container1{
-        margin-left: 83px;
+        margin-left: 60px;
     }
     .header{
         flex-direction: column;
+    }
+    .container1 h3:last-child{
+        margin-left: 15px;
     }
     #result_container{
         flex-direction: column;
