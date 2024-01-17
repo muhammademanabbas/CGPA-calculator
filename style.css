@@ -32,6 +32,14 @@ select{
     margin-bottom: 20px;
     display: flex;
 }
+    input[type=number]:focus{
+    outline: none;
+    border: 2px solid rgb(189, 93, 152);
+}
+input[type=text]:focus{
+    outline: none;
+    border: 2px solid rgb(189, 93, 152);
+}
 .input-form input{
     color: #fff;
     border-radius: 7px;
