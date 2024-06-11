@@ -1,45 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <title>Dictionary</title>
-  </head>
-  <body>
-    <nav>
-      <h1 id="title">Find Meaning of Word</h1>
-      <i class="active search-history ri-chat-history-line"></i>
-    </nav>
-    <div class="check-search-history">
-      <div class="close-container">
-        <p class="close-p">close</p>
-        <i class="active ri-close-large-line"></i>
-      </div>
-      <div id="searches">
-        <div>
-          <!-- <p class="searched">Your Search</p>
-          <p class="clear-one-search">Clear</p> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculate Cgpa</title>
+</head>
+<body>
+    <div class="main">
+        <div class="page-1">
+            <div class="header">
+            <h2>Calculate GPA for </h2>
+            <h2>(Current Semester)</h2>
+            </div>
+             <form  class="input-form">
+                <div class="container1">
+                    <h3>CGPA of Subject</h3>
+                    <h3 id="second-h3">Credit Hour</h3>
+                    <h3 id="grade-head">Grade</h3>
+                </div>
+                <div class="container">
+                    <label class="label" for="#subject1">Subject 1:</label>
+                    <input id="subject1" class="form-input" type="number" step="any">
+                    <input id="creditHour1" class="form-input" type="number" step="any">
+                    <input class=" grade-input" type="text" value="--" readonly id="grade-1">
+                </div>
+                <div class="container">
+                    <label class="label" for="#subject2">Subject 2:</label>
+                    <input id="subject2" class="form-input" type="number" step="any">
+                    <input id="creditHour2" class="form-input" type="number" step="any">
+                    <input class=" grade-input" type="text" value="--" readonly id="grade-2">
+                </div>
+                <div class="container">
+                    <label class="label" for="#subject3">Subject 3:</label>
+                    <input id="subject3" class="form-input" type="number" step="any">
+                    <input id="creditHour3" class="form-input" type="number" step="any">
+                    <input class=" grade-input" type="text" value="--" readonly id="grade-3">
+                </div>
+                <div class="container">
+                    <label class="label" for="#subject4">Subject 4:</label>
+                    <input id="subject4" class="form-input" type="number" step="any">
+                    <input id="creditHour4" class="form-input" type="number" step="any">
+                    <input class=" grade-input" type="text" value="--" readonly id="grade-4">
+                </div>
+                <div class="container">
+                    <label class="label" for="#subject5">Subject 5:</label>
+                    <input id="subject5" class="form-input" type="number" step="any">
+                    <input id="creditHour5" class="form-input" type="number" step="any">
+                    <input class=" grade-input" type="text" value="--" readonly id="grade-5">
+                </div>
+                <div class="container">
+                    <label class="label" for="#subject6">Subject 6:</label>
+                    <input id="subject6" class="form-input" type="number" step="any">
+                    <input id="creditHour6" class="form-input" type="number" step="any">
+                    <input class=" grade-input" type="text" value="--" readonly id="grade-6">
+                </div>
+                <div class="container-last">    
+                        <input type="submit" id="submit-form" value="Calculate GPA">
+                </div>
+                <div id="result_container">
+                    <h3 id="result">Result...</h3>
+                    <h3 id="averageMarks">Average...</h3>
+                </div>
+             </form>
         </div>
-      </div>
-      <div class="delete-all">
-        clear all <i class="active ri-delete-bin-6-line"></i>
-      </div>
     </div>
-    <main id="landing-page">
-      <form class="container">
-        <div class="search-box">
-          <input type="text" id="search" placeholder="Search for a word" />
-          <button class="btn41-43 search-btn btn-42">Search</button>
-        </div>
-        <p id="result">Definition .....</p>
-      </form>
-    </main>
-
-    <script src="script.js"></script>
-  </body>
+    <script src="./script.js"></script>
+</body>
 </html>
